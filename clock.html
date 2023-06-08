@@ -1,0 +1,59 @@
+<!-- using pure CSS -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style media="screen">
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+         }
+         .container{
+            min-height: 100vh;
+            background: #f0f0f0;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+         }
+         .clock{
+            height: 200px;
+            width: 200px;
+            border: 20px solid crimson;
+            border-radius: 50%;
+            position: relative;
+            top: 200px;
+            left: 0px;
+            right: 0px;
+            bottom:0px;
+            margin: auto;
+         }
+         .hour{
+            height:70px;
+            width: 15px;
+            background: crimson;
+            border-radius: 10px;
+            position: relative;
+            top: 100px;
+            left: 0px;
+            right: 0px;
+            bottom:0px;
+            margin: auto;
+            animation: clock 2s linear infinite;
+
+         }
+         @keyframes clock{
+            
+         }
+        </style>
+    </head>
+    <body>
+        <div class="Container">
+            <div class="clock">
+                <div class="second"></div>
+                <div class="minute"></div>
+                <div class="hour"></div>
+            </div>
+        </div>
+    </body>
+</html>
